@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".signIn">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/sighup"
+        android:layout_height="180dp">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="120dp"
+            android:layout_height="58dp"
+            android:text="@string/signin"
+            android:textSize="30sp"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-condensed-medium"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+
+        android:layout_marginTop="100dp"
+        app:boxStrokeColor="#F10000"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="300dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:id="@+id/uname"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/user"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+
+            android:background="@drawable/inputbox"
+            android:hint="@string/username" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="300dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:id="@+id/pwd"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/lock"
+            android:background="@drawable/inputbox"
+            android:hint="@string/password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnsighIn"
+        android:layout_width="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#C82948"
+        android:layout_height="wrap_content"
+        android:padding="18dp"
+        android:text="@string/signin" />
+
+
+        <TextView
+            android:id="@+id/sighUp"
+            android:layout_width="301dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/dont_have_an_account_sign_up"
+            android:textColor="#983597"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+</LinearLayout>
